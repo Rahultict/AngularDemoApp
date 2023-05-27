@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Poppins:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900&display=swap');
+    /* ********|| INITIALIZATION STARTS ||******** */
+    body, html { 
+        width: 100%; 
+        line-height:18px; 
+        margin:0 !important;
+        padding:0 !important;
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 300; 
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+        font-size: 14px;  
+        color: var(--secondaryColor); 
+        background-color: #efefef;
+        position: relative; z-index: 0; 
+    }
+    .hover-cursor:hover{
+        color:#ffffff;
+        cursor: pointer;
+    }
+    .active{
+        color:#ffffff;
+    }
+    .card-container-wrap{
+        display:flex;
+        justify-content:flex-start;
+        flex-wrap:wrap;
+        margin:0;
+        .item{
+            width:50%;
+            max-width:calc(50% - 30px);
+            margin:15px;
+            background:#fff;
+            border-radius:6px;
+            overflow:hidden;
+            box-shadow:8px 3px 6px #c3c3c3;
+            display:flex;
+            flex-wrap:wrap;
+            position:relative;
+            .card-container {
+                position: relative;
+                margin: 5px;
+                .card-header{
+                    margin: 5px;
+                    .title{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .card-subtitle{
+                        padding-top:5px;
+                        .subtitle{
+                            color:#c3c3c3;
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .card-content{
+                    margin: 5px;
+                    .card-contact-sec{
+                        position: relative;
+                        display: block;
+                        .user-email{
+                            i{
+                                font-size: 10px;
+                            }
+                            label{
+                                font-size: 12px;
+                                padding-left: 5px;
+                            }
+                        }
+                        .user-phone{
+                            i{
+                                font-size: 10px;
+                            }
+                            label{
+                                font-size: 12px;
+                                padding-left: 5px;
+                            }
+                        }
+                    }
+                    .card-info-sec {
+                        margin-top: 10px;
+                        i{
+                                font-size: 10px;
+                            }
+                            label{
+                                font-size: 12px;
+                                padding-left: 5px;
+                            }
+                    }
+                    .card-company-sec {
+                        margin-top: 10px;
+                        i{
+                                font-size: 10px;
+                            }
+                            label{
+                                font-size: 12px;
+                                padding-left: 5px;
+                            }
+                    } 
+                }
+            }
+        }
+    }

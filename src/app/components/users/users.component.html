@@ -1,0 +1,44 @@
+<section>
+    <div class="card-container-wrap">
+        <ng-container *ngFor="let item of Users">
+            <div class="item">
+                <div class="card-container">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <label class="title">{{item.name}}</label>
+                        </div>
+                        <div class="card-subtitle">
+                            <label class="subtitle">username: {{item.username}}</label>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-contact-sec">
+                            <div class="user-email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <label>
+                                    {{item.email}}
+                                </label>
+                            </div>
+                            <div class="user-phone">
+                                <i class="fa-solid fa-phone"></i>
+                                <label>{{item.phone}}</label>
+                            </div>
+                        </div>
+                        <div class="card-info-sec">
+                            <i class="fa-solid fa-house"></i>
+                            <label>{{item.address.street}} {{item.address.suite}}</label> 
+                            <label> {{item.address.city}} {{item.address.zipcode}}</label> 
+                        </div>
+                        <div class="card-company-sec">
+                            <i class="fa-solid fa-building"></i>
+                            <label>{{item.company.name}} {{item.company.catchPhrase}}
+                                <p>{{item.company.bs}}</p> 
+                            </label> 
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>

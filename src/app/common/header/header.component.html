@@ -1,0 +1,12 @@
+<header>
+    <div class="header-container">
+        <div class="header-action-contianer">
+            <ng-container *ngFor="let action of headerActionArray">
+                <div class="header-action-item hover-cursor" routerLinkActive="active" [routerLink]="action.routerPath">{{action.name}}</div>
+            </ng-container>
+        </div>
+        <div class="header-date-time">
+            <span>{{todayDateTime.Date + '-' + todayDateTime.Month + '-' + todayDateTime.Year}}</span>
+        </div>
+    </div>
+</header>
