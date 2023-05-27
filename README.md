@@ -39,3 +39,11 @@ Open terminal and type command:
 ```shell
 ng serve --open
 ```
+
+### Build the App
+
+Open terminal and type command:
+
+```shell
+ng build
+```
