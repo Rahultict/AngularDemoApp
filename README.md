@@ -1,27 +1,41 @@
-# AngularDemoApp
+# Angular Demo Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+This is a demo/sample project with Angular 13+ using cssto demonstrate the User's list from a data source.
 
-## Development server
+# Get Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Install Node.js (ignore if already installed)
 
-## Code scaffolding
+```shell
+https://nodejs.org/en/download
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Install Angular Cli (ignore if already installed)
 
-## Build
+```shell
+npm install -g @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Clone the project
 
-## Running unit tests
+```shell
+git clone https://github.com/Rahultict/AngularDemoApp.git
+cd AngularDemoApp
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Install npm packages
 
-## Running end-to-end tests
+Install the `npm` packages described in the `package.json` and verify that it works:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```shell
+npm install
+npm start
+```
 
-## Further help
+### Navigate to folder
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Open terminal and type command:
+
+```shell
+ng serve --open
+```
